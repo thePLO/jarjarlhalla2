@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'vikingFont';
+    src: url('font.ttf');
+}
+html,
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+hr{
+    margin-bottom: 1vh;
+}
+canvas{
+    border: 2px solid black;
+    margin-bottom: 1vh;
+}
+.vikFont1{
+    font-family: 'vikingFont';
+    font-size: 50px;
+}
+.vikFont2{
+    font-family: 'vikingFont';
+    font-size: 30px;
+}

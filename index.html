@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Jar! Jarl! Halla!!</title>
+    <link rel="stylesheet" href="Release/style.css">
+  </head>
+  <body onresize="update();" onload="update();">
+    <span class="vikFont1">JAR! JARL! HALLA!!</span>
+    <br>
+    <hr>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="1920px" width="1080px"></canvas>
+    <hr>
+    <p class="vikFont2">Hi Vikingks!!</p>
+    <p>After a great day of sailing and raiding, there's only one last thing to do: Chug down all the booze you can!</p>
+    <p>"Jar! Jarl! Halla!" is an arcade score attack in which you will have to keep giving alcohol to all the thirsty vikings while dodging attacks from the ones that have had one too many.</p>
+    <p>Keep them served or a fight might break out and ruin your tavern (again) !</p>
+    <hr>
+    Controls:
+    <ul>
+      <li>Left and Right to get close to the tables</li>
+      <li>Spacebar while close to a table to server a horn</li>
+    </ul>
+    <hr>
+    <ul>
+      <li>Art: Martí Ferragut</li>
+      <li>Production and Coding Assistant: Joan Maeso</li>
+      <li>Coding: Pol de Miguel</li>
+      <li>Design and Art Assistant: Carlos Olivier</li>
+      <li>Music by Jaeher</li>
+      <li>Developed using Unity</li>
+    </ul>
+    <hr>
+    <p>A game made for LD37, December 2016</p>
+
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null, 
+    dataUrl: "Release/20161213_0024_jarjarlhalla.data",
+    codeUrl: "Release/20161213_0024_jarjarlhalla.js",
+    memUrl: "Release/20161213_0024_jarjarlhalla.mem",
+    
+  };
+  function update() {
+    var cvs = document.getElementById("canvas");
+    cvs.height = window.innerHeight*0.8;
+    cvs.width = cvs.height/16*9;
+  }
+</script>
+<script src="Release/UnityLoader.js"></script>
+
+  </body>
+</html>
